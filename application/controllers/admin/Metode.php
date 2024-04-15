@@ -156,17 +156,21 @@ class Metode extends CI_Controller
 				$sebelumnya = $this->tentukan_himpunan($fuzifikasi, $data[$key - 1]['harga_emas']);
 				$sekarang = $this->tentukan_himpunan($fuzifikasi, $value['harga_emas']);
 				$next_label = $this->tentukan_next_label($fuzifikasi, $sebelumnya);
-
-				// Menyimpan data input ke dalam array
-				$transisi[] = [
-					'id_data' => $id,
-					'id_user' => $id_user,
-					'harga_emas' => $value['harga_emas'],
-					'current_state' => $sebelumnya,
-					'next_state' => $sekarang,
-					'next_label' => $next_label,
-				];
+			} else {
+				// var_dump('$data[$key - 1] : ' , $data[$key - 1]['harga_emas']);
+				$sebelumnya = $this->tentukan_himpunan($fuzifikasi, $value['harga_emas']);
+				$sekarang = "";
+				$next_label = $this->tentukan_next_label($fuzifikasi, $sebelumnya);
 			}
+			// Menyimpan data input ke dalam array
+			$transisi[] = [
+				'id_data' => $id,
+				'id_user' => $id_user,
+				'harga_emas' => $value['harga_emas'],
+				'current_state' => $sebelumnya,
+				'next_state' => $sekarang,
+				'next_label' => $next_label,
+			];
 		}
 
 		return $transisi;

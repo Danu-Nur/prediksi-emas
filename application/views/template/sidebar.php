@@ -2,7 +2,7 @@
           <div class="app-brand demo">
             <a href="#" class="app-brand-link">
               
-              <span class=" menu-text fw-bolder ms-2">WEB SAW</span>
+              <span class=" menu-text fw-bolder ms-2">WEB PREDIKSI HARGA EMAS</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">

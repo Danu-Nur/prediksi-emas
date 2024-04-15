@@ -9,7 +9,7 @@
               <!-- Search -->
               <div class="navbar-nav align-items-center">
                 <div class="nav-item d-flex align-items-center">
-                <h5 class="card-title text-primary">Selamat Datang di WEB SAW</h5>
+                <h5 class="card-title text-primary">Selamat Datang di WEB PREDIKSI HARGA EMAS</h5>
                   <!-- <i class="bx bx-search fs-4 lh-0"></i> -->
                   <!-- <input
                     type="text"
